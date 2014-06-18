@@ -120,8 +120,8 @@ function LessCtrl($scope, $http, ap_less, $timeout) {
     }
     
     $scope.saveLessVariables = function () {
-    	// ap_less.saveLessVar(ap_less.getVariablesToString($scope));
-        ap_less.saveLessVar(ap_less.getVariablesToJSON($scope));
+    	ap_less.saveLessVar(ap_less.getVariablesToString($scope));
+        // ap_less.saveLessVar(ap_less.getVariablesToJSON($scope));
     };
     
     $scope.resetLessVariables = function () {

@@ -196,7 +196,7 @@ angular.module('bootstrapVariablesEditor.services', []).
     lessEngine.getVariablesToString = function ($scope) {
     	var string = "" +
     	"/*\n"+
-    	"* pikock http://www.pikock.com/ , autreplanete http://www.autreplanete.com/ \n"+
+    	"* Bootstrap Magic for M. Shanken Communications, Inc. \n"+
     	"*  \n"+
     	"**/\n";
         for (var i = 0; i < $scope.variables.length; i++ ) {
@@ -247,8 +247,9 @@ angular.module('bootstrapVariablesEditor.services', []).
     }; */
 
     lessEngine.saveLessVar = function(data){
-        var tmp = window.open('data', '_blank');
-        tmp.document.write(data);
+        // var tmp = window.open('data', '_blank');
+        // tmp.document.write(data);
+         $('#my2Modal .form-control').val(data);
     };
     
     lessEngine.saveCSS = function($scope){
